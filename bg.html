@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>无标题文档</title>
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+<div id="box"></div>
+</body>
+</html>
+<script>
+    function bg(r) {
+        return parseInt(Math.random()*r);
+    }
+    var oBox=document.getElementById("box");
+    var timer=null;
+    timer = setInterval(function () {
+        oBox.style.background="rgb("+bg(256)+","+bg(256)+","+bg(256) +")"
+    },1000)
+</script>

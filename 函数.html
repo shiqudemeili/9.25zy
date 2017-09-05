@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+   /* function show1() {
+        var a=12;
+        function show2() {
+            alert(a);
+        }
+        show2();
+    }
+    show1()*/
+
+/*   function show() {
+       alert(1);
+       return 1;
+   }
+   alert(show());*/
+
+    function a(a) {
+        alert(1);
+        return function (b) {
+            return function (c) {
+                return a+b+c;
+            }
+        };
+    }
+    alert(a(1)(2)(3))
+
+    function b(a,b,c) {
+        return function(){
+            return function(){
+                return a+b+c;
+            }
+        }
+    }
+    alert(b(1,2,3))
+</script>

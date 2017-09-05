@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>无标题文档</title>
+    <style id="css">#box{ width: 200px ;height: 200px ;background: red ;}</style>
+    <script>
+        window.onload = function(){
+            var oBox = document.getElementById('box');
+            var oCss = document.getElementById('css');
+            var oArray=[oCss.innerHTML];
+            oArray = oArray[0].split(" ");
+            oBox.onclick = function(){
+                alert(oArray[2])
+            }
+        }
+    </script>
+</head>
+
+<body>
+<div id="box"></div>
+</body>
+</html>
